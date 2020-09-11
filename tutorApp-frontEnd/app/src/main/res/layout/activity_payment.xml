@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PaymentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:text="Payment Data"
+            />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/title"
+        android:id="@+id/card"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@color/main"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/offer"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:text="Amount"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ksh 500 /-"
+                android:layout_marginTop="-15dp"
+                android:id="@+id/offer"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txt_phon"
+                    android:text="Payment request wil be sent to:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_phon"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txt_phone"
+                    android:text="0718392040"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Options"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/card"
+        android:layout_marginStart="15dp"
+        android:id="@+id/tx"/>
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tx"
+        android:layout_marginTop="5dp"
+        android:id="@+id/pyt"
+        android:background="@drawable/payment_status_on"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mpesa_logo"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:id="@+id/txt_task"
+        android:textSize="18sp"
+        android:text="User_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_task"
+        android:visibility="invisible"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:id="@+id/task_name"
+        android:text="Task nMAE"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/title"
+        android:textSize="18sp"
+        android:id="@+id/txt_price"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_price"
+
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginEnd="25dp"
+        android:text="Ksh 100"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyt"
+        android:id="@+id/txt_other"
+        android:textSize="16sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Pay using another number"/>
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pyt"
+        android:layout_alignParentEnd="true"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_below="@id/txt_other"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/phone_no"
+        android:background="@drawable/round_edittext"
+        android:layout_marginEnd="15dp"
+        android:inputType="phone"
+        tools:ignore="Autofill,LabelFor" />
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/phone_no"
+        android:layout_marginTop="5dp"
+        android:id="@+id/pt"
+        android:onClick="next"
+        android:background="@drawable/payment_status_on"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_visa"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="1dp"
+        android:orientation="horizontal"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/line"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pt"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:onClick="pay"
+        android:layout_toEndOf="@id/line"/>
+
+
+
+</RelativeLayout>

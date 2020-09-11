@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:id="@+id/main"
+    android:layout_marginEnd="15dp">
+
+    <RelativeLayout
+        android:layout_below="@id/rating_bar"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="15dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/lightg"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/user_name"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:text=""/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@id/user_name"
+                    android:layout_marginStart="100dp"
+                    android:id="@+id/subject"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#6e6e6e"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/accept"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:minLines="3"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:layout_below="@id/subject"
+                    android:id="@+id/bio"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="100dp"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/card"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:progressTint="@color/main"
+        android:backgroundTint="@color/white"
+        android:isIndicator="true"
+        android:visibility="invisible"
+
+        android:layout_marginStart="60dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"/>
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        style="@style/Widget.MaterialRatingBar.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/card"
+        android:maxHeight="24dp"
+        android:minHeight="24dp"
+        android:id="@+id/rating_bar"/>
+
+
+</RelativeLayout>

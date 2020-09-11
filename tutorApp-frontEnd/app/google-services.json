@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "500179865575",
+    "firebase_url": "https://tutorapp-1152b.firebaseio.com",
+    "project_id": "tutorapp-1152b",
+    "storage_bucket": "tutorapp-1152b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500179865575:android:1909ba430f4213d131b742",
+        "android_client_info": {
+          "package_name": "com.mojaafar.tutorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500179865575-f6ftbldviason0ju9ueddqltl7q9kmqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCaROtXtjd6RseoqnO2LLgo4CqIEnCRps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500179865575-f6ftbldviason0ju9ueddqltl7q9kmqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
