@@ -1,12 +1,12 @@
 {
-    "name": "denni/trial",
+    "name": "jafa/trial",
     "description": "phpfirebase",
     "type": "project",
     "license": "GNU3",
     "authors": [
         {
-            "name": "Denis Ogutu",
-            "email": "dennisogutu@ymail.com"
+            "name": "Jaafar",
+            "email": "jmohsa@gmail.com"
         }
     ],
     "minimum-stability": "dev",

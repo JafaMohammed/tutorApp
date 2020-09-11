@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dennis
- * Date: 1/28/2019
- * Time: 4:09 PM
- */
+
 require_once './vendor/autoload.php';
 use Kreait\Firebase\Factory;
 use Kreait\Firebase\ServiceAccount;
